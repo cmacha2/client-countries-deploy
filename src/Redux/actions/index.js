@@ -1,6 +1,6 @@
 import { ADD_CHATBOT_INFO, CURRENT_PAGE, GET_ALL_ACTIVITIES, GET_COUNTRIES, GET_COUNTRIES_DETAILS, GET_COUNTRIES_FOR_CONTINENT, GET_COUNTRIES_MATCH, GET_COUNTRIES_SORT, GET_FILTER_ACTIVITIES, HANDLER_PAGINATION, POST_ACTIVITY, SHOW_ALL_ACTIVITIES, SWITCH_THEME } from "../actions-types";
 import axios from "axios"
-const URL_BACK = 'https://travelworld-api.herokuapp.com/'
+const URL_BACK = 'https://travelworld-api.herokuapp.com'
 
 export function addChatBotInfo(payload) {
   return { type: ADD_CHATBOT_INFO, payload };
