@@ -6,6 +6,15 @@ import { ContainerSwitch, InputCheckBox, LaberlSwitch, LaberTheme, SpanSlider } 
 export default function Switch() {
      const theme = useSelector(state => state.theme);
      const dispatch = useDispatch();
+
+     useEffect(() => {
+      var data = window.localStorage.getItem('MY_CURRENT_MODE')
+      if(data!==null)dispatch(switchTheme(JSON.parse(data)))
+     }, []);
+
+    useEffect(() => {
+      window.localStorage.setItem('MY_CURRENT_MODE', JSON.stringify(theme))
+    }, [theme]);
     
   return (
     <ContainerSwitch>
