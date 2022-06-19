@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { switchTheme } from '../../Redux/actions';
 import { ContainerSwitch, InputCheckBox, LaberlSwitch, LaberTheme, SpanSlider } from './Switch.css';
