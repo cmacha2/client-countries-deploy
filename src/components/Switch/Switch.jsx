@@ -18,7 +18,7 @@ export default function Switch() {
     
   return (
     <ContainerSwitch>
-    <LaberTheme htmlFor="theme" > {theme ? "Light Mode" : "Dark Mode" } </LaberTheme>
+    <LaberTheme htmlFor="theme" > {window.localStorage.getItem('MY_CURRENT_MODE')||true ? "Light Mode" : "Dark Mode" } </LaberTheme>
      <LaberlSwitch>
      <InputCheckBox type="checkbox" name="theme" id="theme" onChange={()=>dispatch(switchTheme(!theme))}/>
      <SpanSlider id='changeMode' ></SpanSlider>
