@@ -28,7 +28,7 @@ export default function FilterByActivities() {
      <Selectors  name="activities" id="activities" onChange={onChange}>
         <Options value={'allCountries'} >Filter by Activities</Options>
         <Options value={'allActivities'}>All containt Activities</Options>
-        { allActivities?.map((act)=><Options key={act.id} value={act.name}>{act.name}</Options>)}
+        {allActivities.length && allActivities?.map((act)=><Options key={act.id} value={act.name}>{act.name}</Options>)}
     </Selectors>
     </ContainerMenu>
   );
