@@ -25,9 +25,7 @@ const initialState = {
         }
       }
       case GET_COUNTRIES:{
-
         const [countries,status] = action.payload
-        console.log(countries)
         return {
           ...state,
           currentPage:0,
