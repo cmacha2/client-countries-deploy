@@ -33,6 +33,7 @@ const initialState = {
           currentPage:0,
           countries:countries,
           allCountries:countries,
+          allActivities:[],
           status:status,
         }
       }

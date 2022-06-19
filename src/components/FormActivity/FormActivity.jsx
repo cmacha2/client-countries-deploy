@@ -17,8 +17,11 @@ export default function FormActivity() {
   const dispatch = useDispatch();
   const history = useHistory();
   const [countries, setCountries] = useState([]);
+  const AllCountriesSort = allCountries.sort(function SortNameAZ(a, b){
+    return a.name.localeCompare(b.name);
+})
   
-  if (!allCountries.length) dispatch(getCountries());
+  if (!AllCountriesSort.length) dispatch(getCountries());
   const [input, setInput] = useState({
     name: "",
     duration: "",
@@ -234,7 +237,7 @@ export default function FormActivity() {
             onChange={onChange}
           >
             <option>Select Countries</option>
-            {allCountries?.map((c, i) => (
+            {AllCountriesSort?.map((c, i) => (
               <option name="ids" key={i} value={c.id}>
                 {c.name}
               </option>

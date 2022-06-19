@@ -89,7 +89,6 @@ export default function ChatBot({ showComponent, setShowComponent }) {
       x.name.toLowerCase().includes(msgLowerCase)
     );
     if (activityType.length) {
-      console.log(msgLowerCase);
       dispatch(getFilterActivities(msgLowerCase));
       return "Successful, showing all countries with activity " + msgLowerCase;
     }
@@ -127,7 +126,7 @@ export default function ChatBot({ showComponent, setShowComponent }) {
       return "Please give a thumbs up to this guy who put in a lot of effort.";
 
     if (msgLowerCase)
-      return `Disculpe actualmente no podemos ayudarlo con nada mas`;
+      return `Sorry we can not help you with anything else, write more information to choose other options`;
   }
 
   const onSubmit = (e) => {
