@@ -7,6 +7,7 @@ export default function FilterByActivities() {
   const [nameActivity, setNameActivity] = useState('');
   const dispatch = useDispatch(); 
   const allActivities = useSelector(state => state.allActivities);
+  if (!allActivities.length) dispatch(getCountries());
 
   const onChange = (e) => {
     setNameActivity(e.target.value);
@@ -27,7 +28,7 @@ export default function FilterByActivities() {
      <Selectors  name="activities" id="activities" onChange={onChange}>
         <Options value={'allCountries'} >Filter by Activities</Options>
         <Options value={'allActivities'}>All containt Activities</Options>
-        { allActivities && allActivities?.map((act)=><Options key={act.id} value={act.name}>{act.name}</Options>)}
+        { allActivities?.map((act)=><Options key={act.id} value={act.name}>{act.name}</Options>)}
     </Selectors>
     </ContainerMenu>
   );
