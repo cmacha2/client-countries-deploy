@@ -40,6 +40,7 @@ export const Container = styled.form`
       .error-name {
         display: flex;
         color: #ab2a3e;
+        width: 25rem;
       }
       .name {
         width: 15rem;
@@ -64,6 +65,7 @@ export const Container = styled.form`
       }
       .time {
         width: 15rem;
+        height: 2.8rem;
         background: ${({ theme }) => theme.bgc};
         padding: 10px;
         border-radius: 4px;
