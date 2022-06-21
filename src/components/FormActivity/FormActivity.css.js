@@ -37,7 +37,7 @@ export const Container = styled.form`
 
     .container-name {
       margin: 0.5rem;
-      .error {
+      .error-name {
         display: flex;
         color: #ab2a3e;
       }
@@ -56,7 +56,7 @@ export const Container = styled.form`
     .select-time {
       margin: 0.5rem;
       display: flex;
-      .error {
+      .error-time {
         color: #ab2a3e;
         display: flex;
         padding-top: 0.8rem;
