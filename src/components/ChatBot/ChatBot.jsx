@@ -163,7 +163,7 @@ export default function ChatBot({ showComponent, setShowComponent }) {
       </ChatsContainer>
       <Form onSubmit={onSubmit}>
         <Input
-          // id="inputChatBot"
+          id="inputChatBot"
           onChange={onChange}
           type="text"
           value={input}
