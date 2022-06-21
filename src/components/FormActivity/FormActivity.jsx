@@ -100,7 +100,7 @@ export default function FormActivity() {
             type="text"
             placeholder="Write the name"
           />
-          {errors.name && <span className="error">{errors.name}</span>}
+          {errors.name && <span className="error-name">{errors.name}</span>}
         </div>
 
         <h3>Duration</h3>
@@ -114,7 +114,7 @@ export default function FormActivity() {
             type="text"
             placeholder="Write the duration"
           />
-          {errors.duration && <span className="error">{errors.duration}</span>}
+          {errors.duration && <span className="error-time">{errors.duration}</span>}
         </div>
 
         <h3>Difficulty</h3>
