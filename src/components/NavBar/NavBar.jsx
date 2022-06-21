@@ -13,7 +13,7 @@ export default function NavBar() {
   return (
     <Wrapper>
       <ContainerIMG>
-      <img src={theme ? ligthLogo : darkLogo} className="logo" onClick={()=> history.replace("/home")} width={80} alt="travel"/>
+      <img src={theme ? ligthLogo : darkLogo} className="logo" onClick={()=> history.replace("/")} width={80} alt="travel"/>
       </ContainerIMG>
       <SearchBox/>
       <Switch/>
