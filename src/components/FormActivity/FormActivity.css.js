@@ -9,7 +9,7 @@ export const Container = styled.form`
   height: 100vh;
   background: ${({theme})=> theme.back};
   .card {
-    width: auto;
+    width: 550px;
     height: auto;
     background-color: ${({ theme }) => theme.bgc};
     margin: 20px;
