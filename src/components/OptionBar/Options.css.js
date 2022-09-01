@@ -7,6 +7,11 @@ export const Container = styled.div`
     justify-content: space-evenly;
     padding: 2rem;
     gap: 10px;
+     @media (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 `
 
 export const ButtonCreateActivity = styled.button`
