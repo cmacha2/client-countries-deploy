@@ -15,6 +15,7 @@ export const Container = styled.div`
 `
 
 export const ButtonCreateActivity = styled.button`
+width: 10rem;
 padding:8px 12px ;
 background-color: ${({theme})=> theme.bgc};
 color:${({theme})=> theme.text};
