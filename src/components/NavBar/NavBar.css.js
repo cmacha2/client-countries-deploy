@@ -15,4 +15,7 @@ export const ContainerIMG = styled.div`
     position: absolute;
     top: 0;
     padding-top: 0.9rem;
+    @media (max-width: 600px) {
+    display:none;
+  }
 `
