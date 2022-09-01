@@ -6,6 +6,11 @@ export const ContainerSwitch = styled.div`
    right: 0rem;
    transform: translate(-50%,-50%);
    text-align: center;
+   @media (max-width: 600px) {
+    position: absolute;
+   top: 2.5rem;
+   right: -2rem;
+  }
 `;
 
 export const LaberTheme = styled.label`
@@ -18,6 +23,9 @@ export const LaberTheme = styled.label`
    transform: translate(-50%,-50%);
    text-align: center;
    color: ${({theme})=> theme.text};
+   @media (max-width: 600px) {
+    display: none;
+  }
 `;
 export const LaberlSwitch = styled.label`
    position: relative;
@@ -26,6 +34,7 @@ export const LaberlSwitch = styled.label`
    height: 30px;
    margin: 0 10px;
    color: ${({theme})=> theme.bgc};
+   
 `
 
 export const SpanSlider = styled.span`
