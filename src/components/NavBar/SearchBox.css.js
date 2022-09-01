@@ -108,4 +108,3 @@ export const ClearInput = styled.span`
     transform: rotate(315deg);
   }
 `;
-
