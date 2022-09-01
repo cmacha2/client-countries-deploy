@@ -89,6 +89,10 @@ padding: 0;
 right: 0;
 padding: 1rem;
   } */
+  
+   @media (max-width: 600px) {
+    display: none;
+  }
 `
 
 const ContainerButton = styled.div`
