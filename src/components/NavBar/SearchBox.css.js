@@ -4,6 +4,11 @@ export const WrapperSearchBox = styled.div`
   position: absolute;
   top: 1rem;
   left: 8rem;
+  @media (max-width: 600px) {
+    position: absolute;
+  top: 1rem;
+  left: 2rem;
+  }
 `;
 
 export const Search = styled.div`
@@ -15,6 +20,9 @@ export const Search = styled.div`
   transition: 0.5s;
   box-shadow: 0 0 0 3px #2b3743;
   overflow: hidden;
+  @media (max-width: 600px) {
+    width: ${(props) => (props.switch ? "230px" : "50px")};
+  }
 `;
 
 export const IconLupa = styled.div`
@@ -100,3 +108,4 @@ export const ClearInput = styled.span`
     transform: rotate(315deg);
   }
 `;
+
