@@ -1,6 +1,6 @@
 import { ADD_CHATBOT_INFO, CURRENT_PAGE, GET_ALL_ACTIVITIES, GET_COUNTRIES, GET_COUNTRIES_DETAILS, GET_COUNTRIES_FOR_CONTINENT, GET_COUNTRIES_MATCH, GET_COUNTRIES_SORT, GET_FILTER_ACTIVITIES, HANDLER_PAGINATION, POST_ACTIVITY, SHOW_ALL_ACTIVITIES, SWITCH_THEME } from "../actions-types";
 import axios from "axios"
-const URL_BACK = 'http://ec2-3-90-83-238.compute-1.amazonaws.com:3001/'
+const URL_BACK = 'http://ec2-3-90-83-238.compute-1.amazonaws.com:3001'
 
 export function addChatBotInfo(payload) {
   return { type: ADD_CHATBOT_INFO, payload };
