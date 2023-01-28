@@ -5,7 +5,8 @@ const URL_BACK = 'http://52.86.204.209:3001'
 const instance = axios.create({
   baseURL:URL_BACK,
   headers:{
-    'Access-Control-Allow-Origin':URL_BACK
+    'Access-Control-Allow-Origin':URL_BACK,
+      'Referrer-Policy': 'unsafe-url'
   }
 })
 
