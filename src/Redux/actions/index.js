@@ -1,6 +1,6 @@
 import { ADD_CHATBOT_INFO, CURRENT_PAGE, GET_ALL_ACTIVITIES, GET_COUNTRIES, GET_COUNTRIES_DETAILS, GET_COUNTRIES_FOR_CONTINENT, GET_COUNTRIES_MATCH, GET_COUNTRIES_SORT, GET_FILTER_ACTIVITIES, HANDLER_PAGINATION, POST_ACTIVITY, SHOW_ALL_ACTIVITIES, SWITCH_THEME } from "../actions-types";
 import axios from "axios"
-const URL_BACK = 'https://web-production-394e.up.railway.app/'
+const URL_BACK = 'https://web-production-394e.up.railway.app'
 
 const instance = axios.create({
   baseURL:URL_BACK,
