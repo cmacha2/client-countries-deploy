@@ -4,10 +4,6 @@ const URL_BACK = 'https://web-production-394e.up.railway.app'
 
 const instance = axios.create({
   baseURL:URL_BACK,
-  headers:{
-    'Access-Control-Allow-Origin':URL_BACK,
-      'Referrer-Policy': 'unsafe-url'
-  }
 })
 
 export function addChatBotInfo(payload) {
